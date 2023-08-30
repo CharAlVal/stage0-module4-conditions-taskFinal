@@ -4,7 +4,7 @@ public class IntegerDivider {
     public void printCompletelyDivided(int dividend, int divider) {
 
 
-        if (dividend != 0 || divider != 0){
+        if (dividend != 0 && divider != 0){
             int value;
             value = dividend/divider;
             value *= divider;
