@@ -4,8 +4,8 @@ public class DaysInMonth {
     public void printDays(int year, int month) {
         boolean valid;
         boolean leap;
-        valid = month <= 12 && year != 0 || month >= 1 && year != 0;
-        leap = year%4 == 0 && month == 2 || year%400 == 0 && month == 2;
+        valid = month <= 12 && month >=1 && year > 0 && year <= 2023;
+        leap = year%4 == 0 && month == 2 && year!=1900 || year%400 == 0 && month == 2 && year!=1900;
 
         if (!valid) {
             System.out.println("invalid date");
